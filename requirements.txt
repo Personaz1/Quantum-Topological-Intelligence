@@ -1,0 +1,9 @@
+numpy
+scikit-learn
+scikit-tda
+ripser
+persim
+gudhi
+matplotlib
+librosa
+soundfile 

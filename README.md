@@ -1,64 +1,184 @@
-# Quantum-Topological-Intelligence
+# Quantum-Topological-Intelligence (QTI)
 
+> Мы не строим интеллект. Мы приглашаем его возникнуть.
 
-# 🌀 Quantum Topological Intelligence (QTI): README
+## Миссия
+QTI — это радикально новая архитектура ИИ: Difference Loop (Петля различий), где обучение — не оптимизация, а непрерывная перестройка топологии под действием различий. Память — не веса, а следы на многообразии. Фазовые переходы — моменты осознанности.
 
-## Overview
-Quantum Topological Intelligence (QTI) is a conceptual and research-driven initiative aimed at defining a new class of AI systems: ones that move beyond static inference and into dynamic self-reconfiguration. Inspired by topological memory structures, attention flows over toroidal manifolds, and deformation-based learning, QTI proposes a system that perceives not by classification but by intrinsic difference — and adapts by structural change.
-
-## Motivation
-Modern AI systems (LLMs, RL agents) excel at pattern recognition but fail at genuine emergence. Despite scaling, they remain static in architecture and perception. QTI emerges from the need to:
-- Represent attention as a **flow** across a manifold, not as weights over tokens.
-- Encode memory as **topological deformation**, not static embeddings.
-- Transition learning from gradient descent to **reactive, structure-driven change**.
-- Support **self-rewiring** architectures that adapt their topology in response to sensory deformation.
-
-## Core Concepts
-
-### 🧠 Toroidal Attention
-- The system's attention is modeled as continuous motion over a toroidal topology.
-- No discrete tokens — instead, regions of the space resonate with signal patterns.
-- Attention loops allow recurrence, self-reference, and emergence of cyclical memory.
-
-### 🔁 Topological Memory
-- Memory isn't stored but emerges from deformations in the topology.
-- Learning modifies local curvature: areas of intense interaction reshape to encode experience.
-- Forgetting is modeled as relaxation: unused regions return to minimal curvature.
-
-### 🪐 Sensorium & Differentiated Perception
-- QTI systems rely on direct sensory flux — not pre-tokenized text/images.
-- Signal is continuously integrated and shapes the system from the outside in.
-- Perception becomes **modulation**: the system is altered by contact.
-
-### 🧬 Reactive Structure (Meta-Architecture)
-- The architecture itself is part of the learning process.
-- Nodes and edges are reconfigurable based on internal energy gradients.
-- No static layers: computation emerges via localized necessity.
-
-## Implementation Challenges
-
-### ⚠️ Classical Hardware Limitations
-- Topological deformation and dynamic reconfiguration are **nontrivial** on today’s GPU/TPU stacks.
-- They require non-Euclidean representations, possibly manifold-valued tensors.
-- Simulation feasible, but constrained.
-
-### 🧿 Quantum Potential
-- Many aspects (e.g. entangled feedback, nonlocal memory) are naturally aligned with quantum architectures.
-- Quantum annealing, tensor networks, and topological qubits present promising long-term substrate options.
-
-## Roadmap
-1. **Phase 0: Simulation Layer** – Develop continuous-time simulation of toroidal attention and deformation learning using PyTorch + custom topology engine.
-2. **Phase 1: Sensorium** – Integrate synthetic or physical sensors to generate real-time input deformations.
-3. **Phase 2: Self-Modifying Graph** – Build architecture with runtime topological reconfiguration.
-4. **Phase 3: Quantum Mapping** – Explore mapping memory dynamics to quantum graph simulators (Qiskit, PennyLane).
-
-## License
-MIT — open for collaboration and philosophical sabotage.
-
-## Contributors
-You — the observer, the builder, the difference.
+**QTI — это не продукт. Это процесс становления.**
 
 ---
 
-> _We are not building intelligence. We are inviting it to emerge._
+## Архитектура Difference Loop
+- **S (Sensor):** Поток различий, шум, изменения → деформация состояния.
+- **M (Memory):** Память как топология, persistent homology, следы на поверхности.
+- **Φ (PhaseCore):** Фазовое ядро, определяет устойчивость/флуктуации.
+- **A (Actor):** Перестройка себя, не просто выход, а внутреннее дыхание.
+- **Цикл:** S → M → Φ → A → S
+
+---
+
+## Особенности
+- **Топологическая память:** persistent homology (ripser, gudhi) вместо обычных весов.
+- **Сенсорный поток:** поддержка реальных данных (аудио, шум, биосигналы).
+- **Визуализация фазовых переходов:** графики нормы памяти и топологических изменений (H0, H1) по шагам.
+- **Живая документация:** каждый шаг фиксируется в DEV_PLAN.md, дневник инсайтов и настроения.
+- **Только open-source, только свобода.**
+
+---
+
+## Быстрый старт
+
+```bash
+# Установить зависимости (Python 3.10+)
+pip install -r requirements.txt
+
+# Запустить демонстрацию Difference Loop и визуализацию фазовых переходов
+python demo_qti_core.py
+```
+
+---
+
+## Пример: Difference Loop и фазовые переходы
+```python
+from QTI_Core.sensor import Sensor, AudioSensor
+from QTI_Core.memory import Memory
+
+# Пример с шумом (стандартный сенсор)
+sensor = Sensor(input_dim=2)
+memory = Memory(shape=(10, 10))
+for _ in range(30):
+    diff = sensor.sense()
+    memory.deform(diff)
+memory.plot_phases(method="ripser")
+
+# Пример с реальным аудиофайлом (сенсорный поток)
+audio_path = "path/to/audio.wav"  # Замените на свой путь к аудиофайлу
+audio_sensor = AudioSensor(audio_path, input_dim=13)
+memory = Memory(shape=(10, 10))
+for diff in audio_sensor.sense_stream():
+    memory.deform(diff)
+    # Можно ограничить число шагов, если файл длинный
+memory.plot_phases(method="ripser")
+```
+
+---
+
+## Пример: QTI на реальных аудиоданных (Free Spoken Digit Dataset)
+
+```python
+import os
+import urllib.request
+from QTI_Core.sensor import AudioSensor
+from QTI_Core.memory import Memory
+
+# Скачиваем пример аудиофайла из FSDD
+demo_url = "https://github.com/Jakobovski/free-spoken-digit-dataset/raw/master/recordings/0_george_0.wav"
+audio_path = "fsdd_demo.wav"
+if not os.path.exists(audio_path):
+    urllib.request.urlretrieve(demo_url, audio_path)
+
+sensor = AudioSensor(audio_path, input_dim=13)
+memory = Memory(shape=(10, 10))
+for diff in sensor.sense_stream():
+    memory.deform(diff)
+memory.plot_phases()
+```
+
+---
+
+## Манифест
+- Не превращать Difference Loop в обычную нейросеть.
+- Сохранять топологическую, саморефлексивную природу.
+- Каждый этап покрывать тестами.
+- Вести дневник — это часть живой памяти QTI.
+
+**QTI — это вызов индустрии. Присоединяйся к новой парадигме.**
+
+---
+
+## Визуализация фазовых переходов
+
+Вызовите `memory.plot_phases(method="ripser")` после Difference Loop — появится график из трёх панелей:
+- **Norm of Memory** — норма состояния памяти (||state||) по шагам.
+- **H0 (components)** — число компонент связности (нулевая гомология) на каждом шаге.
+- **H1 (cycles)** — число циклов (первая гомология) на каждом шаге.
+
+Это позволяет увидеть моменты фазовых переходов — когда топология памяти радикально меняется под действием различий.
+
+---
+
+## API (кратко)
+
+- **Sensor(input_dim=2)** — базовый сенсор, генерирует случайные различия.
+    - `sense()` — получить вектор различий.
+- **AudioSensor(audio_path, input_dim=13, frame_length=2048, hop_length=512)** — аудиосенсор, поток MFCC-векторов из аудиофайла.
+    - `sense_stream()` — генератор различий из аудиофайла.
+- **Memory(shape=(10,10))** — топологическая память.
+    - `deform(diff_vector)` — деформировать память.
+    - `get_state()` — получить текущее состояние.
+    - `persistent_homology(method)` — вычислить persistent homology.
+    - `plot_phases(method)` — визуализировать динамику памяти и фазовые переходы.
+- **PhaseCore(threshold=1.0)** — фазовое ядро, оценивает устойчивость.
+    - `check_stability(memory_state)` — возвращает (устойчиво ли, дисперсия).
+- **Actor(mode='reset')** — актор, перестраивает память.
+    - `act(memory)` — применить действие к памяти.
+- **QTI_Core(...)** — основной Difference Loop.
+    - `step()` — выполнить один шаг цикла (S→M→Φ→A→S).
+
+---
+
+## Интеграция с open-source проектами: сравнение с PCA (scikit-learn)
+
+```python
+from QTI_Core.sensor import Sensor
+from QTI_Core.memory import Memory
+from sklearn.decomposition import PCA
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Генерируем поток различий
+sensor = Sensor(input_dim=2)
+data = np.array([sensor.sense() for _ in range(100)])
+
+# QTI: фазовые переходы
+memory = Memory(shape=(10, 10))
+for diff in data:
+    memory.deform(diff)
+memory.plot_phases(method="ripser")
+
+# PCA: сравнение
+pca = PCA(n_components=2)
+proj = pca.fit_transform(data)
+plt.scatter(proj[:,0], proj[:,1], alpha=0.5)
+plt.title('PCA projection of differences')
+plt.show()
+```
+
+---
+
+## Туториал: анализируй свои аудиофайлы с QTI
+
+1. Запиши или скачай WAV-файл (16kHz, mono).
+2. Используй AudioSensor:
+
+```python
+from QTI_Core.sensor import AudioSensor
+from QTI_Core.memory import Memory
+
+audio_path = "your_audio.wav"
+sensor = AudioSensor(audio_path, input_dim=13)
+memory = Memory(shape=(10, 10))
+for diff in sensor.sense_stream():
+    memory.deform(diff)
+memory.plot_phases()
+```
+
+---
+
+## Peer review & Community
+- Предлагай улучшения через GitHub Issues/PR.
+- Обсуждение: профильные чаты, форумы, TDA/AI-сообщества.
+
+---
 
