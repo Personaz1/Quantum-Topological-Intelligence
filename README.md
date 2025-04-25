@@ -9,6 +9,39 @@ QTI — это радикально новая архитектура ИИ: Diff
 
 ---
 
+## Новое: Сенсор весов и гибридный подход
+
+QTI теперь поддерживает анализ весов современных нейросетей через Difference Loop. Можно использовать WeightSensor для подачи весов (или активаций) любой PyTorch/TF-модели в Difference Loop и анализировать их топологическую динамику (persistent homology, фазовые переходы).
+
+- WeightSensor позволяет строить топологическую подпись весов или активаций любой нейросети.
+- Это открывает путь к радикально новым способам анализа и регуляризации современных моделей.
+- QTI становится не альтернативой, а надстройкой над лучшими нейросетевыми архитектурами.
+
+**Пример использования WeightSensor:**
+```python
+from QTI_Core.sensor import WeightSensor
+import torch
+import torch.nn as nn
+from ripser import ripser
+
+class SimpleMLP(nn.Module):
+    def __init__(self):
+        super().__init__()
+        self.fc1 = nn.Linear(10, 20)
+        self.fc2 = nn.Linear(20, 2)
+    def forward(self, x):
+        return self.fc2(torch.relu(self.fc1(x)))
+
+mlp = SimpleMLP()
+# Получаем веса первого слоя
+weights = mlp.fc1.weight.detach().cpu().numpy()
+sensor = WeightSensor(weights)
+diff = sensor.sense()
+# Теперь diff можно подать в Difference Loop
+```
+
+---
+
 ## Ограничения и открытые вопросы
 
 - На данный момент QTI — это архитектурный эксперимент, а не готовый ИИ.

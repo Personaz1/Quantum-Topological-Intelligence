@@ -11,6 +11,30 @@
 ## Архитектура QTI
 - S (Sensor), M (Memory), Φ (PhaseCore), A (Actor), Difference Loop.
 - Отличие от классических нейросетей: память — не веса, а топология; обучение — не оптимизация, а фазовые переходы.
+- **Гибридный подход:** теперь QTI может анализировать веса и активации современных нейросетей через WeightSensor, интегрируясь с PyTorch/TF.
+
+## WeightSensor и анализ весов нейросетей
+- WeightSensor позволяет подавать веса (или активации) любой нейросети в Difference Loop и анализировать их топологическую динамику (persistent homology, фазовые переходы).
+- Это открывает путь к новым способам анализа и регуляризации современных моделей.
+
+**Пример использования WeightSensor:**
+```python
+from QTI_Core.sensor import WeightSensor
+import torch
+import torch.nn as nn
+class SimpleMLP(nn.Module):
+    def __init__(self):
+        super().__init__()
+        self.fc1 = nn.Linear(10, 20)
+        self.fc2 = nn.Linear(20, 2)
+    def forward(self, x):
+        return self.fc2(torch.relu(self.fc1(x)))
+mlp = SimpleMLP()
+weights = mlp.fc1.weight.detach().cpu().numpy()
+sensor = WeightSensor(weights)
+diff = sensor.sense()
+# diff можно подать в Difference Loop
+```
 
 ## Пример Difference Loop (код)
 ```python

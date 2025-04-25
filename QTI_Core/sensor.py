@@ -53,3 +53,29 @@ class AudioSensor(Sensor):
         """
         for mfcc in self.mfccs:
             yield mfcc
+
+class WeightSensor(Sensor):
+    """
+    Сенсор весов: преобразует веса (или активации) нейросети в поток различий для Difference Loop.
+    Можно использовать для анализа топологической динамики современных моделей (PyTorch, TF).
+    """
+    def __init__(self, weights, input_dim=None):
+        """
+        :param weights: numpy-массив весов или активаций (любая форма)
+        :param input_dim: размерность выходного вектора различий (по умолчанию = размерность весов)
+        """
+        if input_dim is None:
+            input_dim = weights.size if hasattr(weights, 'size') else len(weights)
+        super().__init__(input_dim)
+        self.weights = weights.flatten()
+    def sense(self):
+        """
+        Возвращает веса как вектор различий (или их случайную проекцию, если input_dim < размерности весов).
+        :return: np.ndarray, shape=(input_dim,)
+        """
+        if self.input_dim == self.weights.shape[0]:
+            return self.weights
+        else:
+            # Случайная проекция весов в пространство input_dim
+            idx = np.random.choice(self.weights.shape[0], self.input_dim, replace=False)
+            return self.weights[idx]
