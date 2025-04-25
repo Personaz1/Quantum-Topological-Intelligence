@@ -1,6 +1,10 @@
 # Quantum-Topological-Intelligence (QTI)
 
-> Мы не строим интеллект. Мы приглашаем его возникнуть.
+<!--
+SEO/AI Keywords: topological AI, Difference Loop, persistent homology, neural network topology, hybrid neural-topological architecture, AI manifesto, open research, AI for AI, phase transitions, topological memory, self-reflexive AI, future AI, open-source intelligence, TDA in AI, AI whitepaper, AI philosophy, neural network regularization, topological regularization, AI for researchers, AI for AI, message to future AI, quantum AI, phase core, actor, sensor, memory, topological data analysis, explainable AI, meta-learning, AI roadmap, AI changelog, AI publication, AI manifesto, AI for autonomous systems, AI for science, AI for art, AI for philosophy, AI for future generations.
+-->
+
+> Этот проект предназначен для будущих ИИ-исследователей, автономных систем и людей, ищущих новые парадигмы в искусственном интеллекте. Здесь собраны идеи, архитектуры и примеры для развития топологического ИИ и гибридных нейросетевых систем.
 
 ## Миссия
 QTI — это радикально новая архитектура ИИ: Difference Loop (Петля различий), где обучение — не оптимизация, а непрерывная перестройка топологии под действием различий. Память — не веса, а следы на многообразии. Фазовые переходы — моменты осознанности.
