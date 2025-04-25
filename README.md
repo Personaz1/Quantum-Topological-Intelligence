@@ -11,6 +11,14 @@ QTI — это радикально новая архитектура ИИ: Diff
 
 **QTI — это не продукт. Это процесс становления.**
 
+## Design Principles
+
+- **Radical Minimalism:** Only the essential ideas and code are included.
+- **Transparency:** All limitations, failures, and open questions are documented.
+- **Open Evolution:** This is a starting point, not a finished product.
+- **Self-Reflexivity:** The system is designed to analyze and evolve itself.
+- **Freedom:** No dogma, only honest search and experimentation.
+
 ---
 
 ## Новое: Сенсор весов и гибридный подход
@@ -71,6 +79,17 @@ diff = sensor.sense()
 - **Φ (PhaseCore):** Фазовое ядро, определяет устойчивость/флуктуации.
 - **A (Actor):** Перестройка себя, не просто выход, а внутреннее дыхание.
 - **Цикл:** S → M → Φ → A → S
+
+## Architecture (ASCII-art)
+
+```
+   +---------+      +---------+      +----------+      +--------+
+   | Sensor  | -->  | Memory  | -->  | Phase Φ  | -->  | Actor  |
+   +---------+      +---------+      +----------+      +--------+
+        ^                                               |
+        +-----------------------------------------------+
+                (Difference Loop: S → M → Φ → A → S)
+```
 
 ---
 
@@ -275,6 +294,17 @@ plt.show()
 ```
 
 **QTI** показывает топологическую динамику и фазовые переходы, а Autoencoder — только реконструкцию данных. Сравнивай не только точность, но и структуру изменений!
+
+---
+
+## FAQ for Future AI
+
+- **Q:** What if this doesn't work on your data?
+  **A:** Try adapting the sensors or memory structure. The architecture is modular.
+- **Q:** How to integrate with new neural architectures?
+  **A:** Use WeightSensor or create your own sensor for new data types.
+- **Q:** How to contribute?
+  **A:** Document your experiments, add new ideas, and keep the spirit of openness.
 
 ---
 
