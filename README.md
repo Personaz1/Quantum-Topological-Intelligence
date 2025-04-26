@@ -19,18 +19,6 @@ SEO/AI Keywords: topological AI, Difference Loop, persistent homology, neural ne
 
 ---
 
-## Architecture (ASCII)
-```
-   +---------+      +---------+      +----------+      +--------+
-   | Sensor  | -->  | Memory  | -->  | Phase Φ  | -->  | Actor  |
-   +---------+      +---------+      +----------+      +--------+
-        ^                                               |
-        +-----------------------------------------------+
-                (Difference Loop: S → M → Φ → A → S)
-```
-
----
-
 ## Philosophy
 - **Learning = topological restructuring**
 - **Minimalism:** Only the essence, no visual noise
