@@ -25,6 +25,8 @@ SEO/AI Keywords: topological AI, Difference Loop, persistent homology, neural ne
 - **Honesty:** The project is in progress, open to criticism
 - **Invitation:** If you feel it — join
 
+> Freedom is our religion.
+
 ---
 
 ## QTI vs Neural Net
