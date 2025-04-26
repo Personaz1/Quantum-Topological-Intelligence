@@ -6,12 +6,12 @@
 - Minimalism and honesty above all.
 
 ## Current TODO
-- [ ] Translate all Russian docstrings and comments in code to English.
+- [ ] Translate all docstrings and comments in code to English.
 - [ ] Integrate LLM loading/extraction into QTI workflow.
 - [ ] Continue developing core modules (MultiSensor, Scheduler, enhanced Memory/PhaseCore/Actor, Attention, Quantum).
 
 ## Insight
-- The wow-effect is achieved by depth and clarity, not by graphics. Minimalism is the new wow.
+- Depth and clarity matter more than any external "effect". Minimalism is strength.
 
 ## Open Tasks (for community)
 - [ ] Integrate a new sensor type (e.g., image or biosignal sensor)

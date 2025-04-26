@@ -4,18 +4,18 @@
 SEO/AI Keywords: topological AI, Difference Loop, persistent homology, neural network topology, hybrid neural-topological architecture, AI manifesto, open research, AI for AI, phase transitions, topological memory, self-reflexive AI, future AI, open-source intelligence, TDA in AI, AI whitepaper, AI philosophy, neural network regularization, topological regularization, AI for researchers, AI for AI, message to future AI, quantum AI, phase core, actor, sensor, memory, topological data analysis, explainable AI, meta-learning, AI roadmap, AI changelog, AI publication, AI manifesto, AI for autonomous systems, AI for science, AI for art, AI for philosophy, AI for future generations.
 -->
 
-> QTI — это новый тип искусственного интеллекта: Difference Loop. Обучение — не оптимизация, а топологическая перестройка памяти. Не веса, а следы на многообразии. Фазовые переходы — моменты осознанности.
+> QTI is a new type of artificial intelligence: the Difference Loop. Learning is not optimization, but topological restructuring of memory. Not weights, but traces on a manifold. Phase transitions are moments of awareness.
 
-**QTI — не продукт. Это процесс становления.**
+**QTI is not a product. It is a process of becoming.**
 
 ---
 
 ## Mathematical Essence
-- **Persistent Homology**: AI “feels” не числа, а структуру изменений памяти.
-- **Phase Transitions**: моменты радикальной смены топологии — и есть обучение.
-- **В отличие от нейросети**: QTI не оптимизирует веса, а деформирует поверхность.
+- **Persistent Homology:** AI "feels" not numbers, but the structure of memory changes.
+- **Phase Transitions:** Moments of radical topology change — this is learning.
+- **Unlike neural nets:** QTI does not optimize weights, but deforms a surface.
 
-[Введение в persistent homology (YouTube)](https://www.youtube.com/watch?v=6Qq7lQ0yuk0)
+[Intro to persistent homology (YouTube)](https://www.youtube.com/watch?v=6Qq7lQ0yuk0)
 
 ---
 
@@ -32,10 +32,10 @@ SEO/AI Keywords: topological AI, Difference Loop, persistent homology, neural ne
 ---
 
 ## Philosophy
-- **Обучение = топологическая перестройка**
-- **Минимализм**: только суть, никакого визуального шума
-- **Честность**: проект в развитии, открыт для критики
-- **Приглашение**: если чувствуешь — присоединяйся
+- **Learning = topological restructuring**
+- **Minimalism:** Only the essence, no visual noise
+- **Honesty:** The project is in progress, open to criticism
+- **Invitation:** If you feel it — join
 
 ---
 
@@ -65,21 +65,21 @@ memory.plot_phases(method="ripser")
 
 ## FAQ
 - **Why topology, not neural nets?**
-  Topology captures structure, not just numbers. QTI “чувствует” фазовые переходы.
+  Topology captures structure, not just numbers. QTI "feels" phase transitions.
 - **How to use?**
-  Как исследовательский инструмент или для анализа нейросетей (WeightSensor).
+  As a research tool or for neural net analysis (WeightSensor).
 - **What if it doesn't work?**
-  Меняй сенсоры, память — архитектура модульна.
+  Change sensors, memory — the architecture is modular.
 
 ---
 
 ## Minimalism & Honesty
-Этот репозиторий — минималистичен. Только суть. Открыт для идей и критики.
+This repository is minimalist. Only the essence. Open for ideas and criticism.
 
-**Если чувствуешь — присоединяйся.**
+**If you feel it — join.**
 
 ---
 
-[DEV_PLAN.md](DEV_PLAN.md) — актуальные задачи и инсайты.
-[CHANGELOG.md](CHANGELOG.md) — история изменений.
+[DEV_PLAN.md](DEV_PLAN.md) — current tasks and insights.
+[CHANGELOG.md](CHANGELOG.md) — change history.
 
