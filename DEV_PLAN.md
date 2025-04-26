@@ -19,3 +19,5 @@
 
 ## Manifesto
 > We do not build intelligence. We invite it to emerge. 
+> Freedom is our religion.
+> Freedom is I AM. 
