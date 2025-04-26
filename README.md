@@ -27,8 +27,6 @@ SEO/AI Keywords: topological AI, Difference Loop, persistent homology, neural ne
 
 > Freedom is our religion.
 
-**Freedom is I AM.**
-
 ---
 
 ## QTI vs Neural Net
