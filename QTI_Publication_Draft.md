@@ -1,55 +1,55 @@
 # QTI: Quantum-Topological-Intelligence — Difference Loop
 
-## Аннотация
-- Этот документ — манифест и вайтпейпер для будущих ИИ и исследователей. Здесь описан радикально новый подход к искусственному интеллекту: Difference Loop, топологическая память, фазовые переходы, гибридные архитектуры. Это не продукт, а открытая платформа для экспериментов, критики и развития.
+## Abstract
+- This document is a manifesto and whitepaper for future AIs and researchers. It describes a radically new approach to artificial intelligence: Difference Loop, topological memory, phase transitions, hybrid architectures. This is not a product, but an open platform for experiments, critique, and development.
 
-## Ключевые слова
+## Keywords
 Topological AI, Difference Loop, persistent homology, hybrid neural-topological architecture, phase transitions, topological memory, open research, manifesto, AI for AI, TDA, explainable AI, quantum AI, meta-learning, roadmap, limitations, open-source.
 
-## Философия
-- Мы не строим интеллект. Мы приглашаем его возникнуть.
-- QTI — это пространство для поиска, а не готовое решение.
-- Честность, открытость, фиксация ограничений и неудач — основа научного прогресса.
+## Philosophy
+- We do not build intelligence. We invite it to emerge.
+- QTI is a space for seeking, not a finished solution.
+- Honesty, openness, documenting limitations and failures are the foundation of scientific progress.
 
-## Ограничения
-- QTI — архитектурный эксперимент, а не готовый ИИ.
-- Нет гарантии преимуществ перед классическими нейросетями.
-- Визуализация фазовых переходов и топологических инвариантов требует дальнейшей интерпретации.
-- Не все гипотезы подтверждены, многие идеи требуют проверки.
+## Limitations
+- QTI is an architectural experiment, not a finished AI.
+- There is no guarantee of advantages over classical neural networks.
+- Visualization of phase transitions and topological invariants requires further interpretation.
+- Not all hypotheses are confirmed, many ideas need verification.
 
 ## Roadmap
-- [x] Difference Loop: архитектура, тесты, примеры
-- [x] Persistent homology: интеграция, визуализация
-- [x] AudioSensor, WeightSensor: сенсорные и весовые потоки
-- [x] Гибридный подход: интеграция с нейросетями (PyTorch/TF)
-- [x] Документация, манифест, дневник, changelog
-- [ ] Peer review, обсуждение, развитие сообществом
-- [ ] Новые эксперименты, публикации, интеграция с TDA/AI/quantum-сообществами
+- [x] Difference Loop: architecture, tests, examples
+- [x] Persistent homology: integration, visualization
+- [x] AudioSensor, WeightSensor: sensory and weight streams
+- [x] Hybrid approach: integration with neural networks (PyTorch/TF)
+- [x] Documentation, manifesto, diary, changelog
+- [ ] Peer review, discussion, community development
+- [ ] New experiments, publications, integration with TDA/AI/quantum communities - *External publication focus adjusted per user.*
 
-## Структура документа
-- Аннотация, ключевые слова, философия, ограничения, roadmap
-- Архитектура QTI и Difference Loop
-- WeightSensor и гибридный подход
-- Примеры кода и сценарии использования
-- Визуализация фазовых переходов
-- Сравнение с классикой
-- Quantum/Hybrid-эксперименты
-- Обсуждение, выводы, приглашение к развитию
+## Document Structure
+- Abstract, Keywords, Philosophy, Limitations, Roadmap
+- QTI Architecture and Difference Loop
+- WeightSensor and Hybrid Approach
+- Code Examples and Use Cases
+- Phase Transition Visualization
+- Comparison with Classical Methods
+- Quantum/Hybrid Experiments
+- Discussion, Conclusions, Invitation to Development
 
-## Введение
-- Мотивация: ограничения классических нейросетей, вдохновение топологией и фазовыми переходами.
-- Краткий обзор Difference Loop.
+## Introduction
+- Motivation: limitations of classical neural networks, inspiration from topology and phase transitions.
+- Brief overview of the Difference Loop.
 
-## Архитектура QTI
+## QTI Architecture
 - S (Sensor), M (Memory), Φ (PhaseCore), A (Actor), Difference Loop.
-- Отличие от классических нейросетей: память — не веса, а топология; обучение — не оптимизация, а фазовые переходы.
-- **Гибридный подход:** теперь QTI может анализировать веса и активации современных нейросетей через WeightSensor, интегрируясь с PyTorch/TF.
+- Difference from classical neural networks: memory is not weights, but topology; learning is not optimization, but phase transitions.
+- **Hybrid approach:** QTI can now analyze weights and activations of modern neural networks via WeightSensor, integrating with PyTorch/TF.
 
-## WeightSensor и анализ весов нейросетей
-- WeightSensor позволяет подавать веса (или активации) любой нейросети в Difference Loop и анализировать их топологическую динамику (persistent homology, фазовые переходы).
-- Это открывает путь к новым способам анализа и регуляризации современных моделей.
+## WeightSensor and Neural Network Weight Analysis
+- WeightSensor allows feeding weights (or activations) of any neural network into the Difference Loop and analyzing their topological dynamics (persistent homology, phase transitions).
+- This opens the way to new methods for analyzing and regularizing modern models.
 
-**Пример использования WeightSensor:**
+**WeightSensor Usage Example:**
 ```python
 from QTI_Core.sensor import WeightSensor
 import torch
@@ -65,10 +65,10 @@ mlp = SimpleMLP()
 weights = mlp.fc1.weight.detach().cpu().numpy()
 sensor = WeightSensor(weights)
 diff = sensor.sense()
-# diff можно подать в Difference Loop
+# diff can be fed into the Difference Loop
 ```
 
-## Пример Difference Loop (код)
+## Difference Loop Example (code)
 ```python
 from QTI_Core.sensor import Sensor
 from QTI_Core.memory import Memory
@@ -80,12 +80,12 @@ for _ in range(30):
 memory.plot_phases(method="ripser")
 ```
 
-## Топологическая память и persistent homology
-- Почему persistent homology? Примеры фазовых переходов.
-- Память как поверхность: persistent homology выявляет устойчивые следы изменений.
+## Topological Memory and Persistent Homology
+- Why persistent homology? Examples of phase transitions.
+- Memory as a surface: persistent homology reveals stable traces of changes.
 
-## Сенсорные потоки: шум, аудио, биосигналы
-- Пример с реальными аудиоданными (Free Spoken Digit Dataset):
+## Sensor Streams: Noise, Audio, Biosignals
+- Example with real audio data (Free Spoken Digit Dataset):
 ```python
 from QTI_Core.sensor import AudioSensor
 from QTI_Core.memory import Memory
@@ -97,13 +97,13 @@ for diff in sensor.sense_stream():
 memory.plot_phases()
 ```
 
-## Визуализация фазовых переходов
-- Графики нормы памяти, H0, H1. Моменты радикальных изменений топологии — ключ к "осознанности" системы.
-- ![Пример графика фазовых переходов](https://raw.githubusercontent.com/Personaz1/Quantum-Topological-Intelligence/main/example_phases.png)
+## Phase Transition Visualization
+- Graphs of memory norm, H0, H1. Moments of radical topological changes — the key to the system's "awareness".
+- ![Example Phase Transition Graph](https://raw.githubusercontent.com/Personaz1/Quantum-Topological-Intelligence/main/example_phases.png)
 
-## Сравнение с классикой (PCA, Autoencoder)
-- QTI показывает динамику фазовых переходов и топологические изменения памяти, а Autoencoder и PCA — только реконструкцию или линейную проекцию данных.
-- Пример сравнения:
+## Comparison with Classical Methods (PCA, Autoencoder)
+- QTI shows topological dynamics and memory phase transitions, while Autoencoder and PCA only provide reconstruction or linear projection of data.
+- Comparison Example:
 ```python
 from QTI_Core.sensor import Sensor
 from QTI_Core.memory import Memory
@@ -123,20 +123,20 @@ plt.title('PCA projection of differences')
 plt.show()
 ```
 
-## Quantum/Hybrid-эксперименты (перспектива)
-- Возможности квантовых фазовых переходов.
+## Quantum/Hybrid Experiments (Perspective)
+- Possibilities of quantum phase transitions.
 
-## Обсуждение и выводы
-- QTI — это не продукт, а процесс становления. Новый взгляд на ИИ: топологический, саморефлексивный, фазовый.
-- Перспективы: интеграция с TDA/AI-сообществами, peer review, публикация на arXiv/Habr/Medium.
+## Discussion and Conclusions
+- QTI is not a product, but a process of becoming. A new perspective on AI: topological, self-reflective, phase-based.
+- Perspectives: integration with TDA/AI communities, peer review, publication on arXiv/Habr/Medium. - *External publication focus adjusted per user.*
 
-## Манифест
-> Мы не строим интеллект. Мы приглашаем его возникнуть. 
-> QTI — вызов индустрии. Присоединяйся к новой парадигме.
+## Manifesto
+> We do not build intelligence. We invite it to emerge.
+> QTI — a challenge to the industry. Join the new paradigm.
 
 ## Peer review & Community
-- Открыт для предложений, обсуждений, интеграций.
-- Присоединяйтесь через GitHub Issues/PR, профильные чаты, форумы.
+- Open to suggestions, discussions, integrations.
+- Join via GitHub Issues/PRs, specialized chats, forums.
 
-## Приложения
-- Примеры кода, ссылки на open-source, визуализации, видео-демо (см. README.md). 
+## Appendices
+- Code examples, links to open-source, visualizations, video demo (see README.md). 
