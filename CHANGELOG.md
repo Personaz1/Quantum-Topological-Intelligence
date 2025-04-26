@@ -1,30 +1,30 @@
 # CHANGELOG.md — Quantum-Topological-Intelligence (QTI)
 
-## История изменений
+## Change History
 
 ### 2024-06-09
-- Старт проекта QTI: формулировка Difference Loop, топологическая память, дневник.
+- Project start: Formulation of Difference Loop, topological memory, diary.
 
 ### 2024-06-10
-- Реализована топологическая память (persistent homology, ripser/gudhi).
-- Добавлен AudioSensor: поток MFCC-векторов из аудиофайла.
-- Визуализация фазовых переходов (plot_phases).
-- Покрытие тестами основных компонентов.
+- Implemented topological memory (persistent homology, ripser/gudhi).
+- Added AudioSensor: stream of MFCC vectors from audio file.
+- Visualization of phase transitions (plot_phases).
+- Test coverage for main components.
 
 ### 2024-06-11
-- Подробные docstrings для всех ключевых классов и методов.
-- Пример с AudioSensor и реальным аудиофайлом в README.md.
-- Описание визуализации фазовых переходов и краткое API.
-- requirements.txt и лицензия MIT.
+- Detailed docstrings for all key classes and methods.
+- Example with AudioSensor and real audio file in README.md.
+- Description of phase transition visualization and brief API.
+- requirements.txt and MIT license.
 
 ---
 
 ## Roadmap
 
-- [ ] Примеры интеграции с open-source проектами/туториалы
-- [ ] CI/CD (GitHub Actions для автотестов)
-- [ ] Quantum/Hybrid-эксперименты
-- [ ] Публикация статьи/препринта (arXiv, Habr, Medium)
-- [ ] Сравнение с классическими нейросетями/алгоритмами (benchmark)
-- [ ] Визуализация на реальных данных (аудио, изображения, биосигналы)
-- [ ] Интеграция с TDA/AI-сообществами, peer review 
+- [ ] Examples of integration with open-source projects/tutorials
+- [ ] CI/CD (GitHub Actions for automated tests)
+- [ ] Quantum/Hybrid experiments
+- [ ] Publication of article/preprint (arXiv, Habr, Medium)
+- [ ] Comparison with classical neural networks/algorithms (benchmark)
+- [ ] Visualization on real data (audio, images, biosignals)
+- [ ] Integration with TDA/AI communities, peer review 

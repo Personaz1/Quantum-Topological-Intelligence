@@ -12,7 +12,7 @@ class TestSensor(unittest.TestCase):
         self.assertIsInstance(diff, np.ndarray)
 
     def test_audio_sensor(self):
-        # Генерируем короткий синтетический аудиофайл
+        # Generate a short synthetic audio file
         sr = 16000
         y = np.random.randn(sr) * 0.01
         fname = "test_audio.wav"

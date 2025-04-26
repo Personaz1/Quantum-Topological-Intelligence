@@ -21,5 +21,5 @@ if __name__ == '__main__':
     for _ in range(steps):
         diff = sensor.sense()
         memory.deform(diff)
-    print("Визуализация фазовых переходов...")
+    print("Visualizing phase transitions...")
     memory.plot_phases(method="ripser") 

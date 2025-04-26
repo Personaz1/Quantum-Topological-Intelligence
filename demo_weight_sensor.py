@@ -6,11 +6,11 @@ import matplotlib.pyplot as plt
 from QTI_Core.sensor import WeightSensor
 from ripser import ripser
 
-# Генерируем синтетические данные
+# Generate synthetic data
 X = np.random.randn(200, 10).astype(np.float32)
 Y = (np.sum(X, axis=1) > 0).astype(np.int64)
 
-# Простая MLP
+# Simple MLP
 class SimpleMLP(nn.Module):
     def __init__(self):
         super().__init__()
@@ -23,12 +23,12 @@ mlp = SimpleMLP()
 optimizer = optim.Adam(mlp.parameters(), lr=0.01)
 loss_fn = nn.CrossEntropyLoss()
 
-# Для визуализации топологии
+# For topology visualization
 h0_list = []
 h1_list = []
 
 for epoch in range(30):
-    # Обучение
+    # Training
     X_tensor = torch.from_numpy(X)
     Y_tensor = torch.from_numpy(Y)
     optimizer.zero_grad()
@@ -36,18 +36,18 @@ for epoch in range(30):
     loss = loss_fn(out, Y_tensor)
     loss.backward()
     optimizer.step()
-    # Анализ топологии весов первого слоя
+    # Analyze topology of the first layer weights
     weights = mlp.fc1.weight.detach().cpu().numpy()
     sensor = WeightSensor(weights)
     diff = sensor.sense()
     ph = ripser(diff.reshape(-1, 1))['dgms']
-    # Сохраняем число компонент (H0) и циклов (H1)
+    # Save number of components (H0) and cycles (H1)
     h0 = len(ph[0])
     h1 = len(ph[1])
     h0_list.append(h0)
     h1_list.append(h1)
 
-# Визуализация
+# Visualization
 plt.figure(figsize=(8, 4))
 plt.plot(h0_list, label='H0 (components)')
 plt.plot(h1_list, label='H1 (cycles)')

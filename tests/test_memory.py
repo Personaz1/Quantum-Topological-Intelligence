@@ -14,7 +14,7 @@ class TestMemory(unittest.TestCase):
 
     def test_persistent_homology(self):
         mem = Memory(shape=(5, 5))
-        # Добавим несколько различий
+        # Add a few differences
         for _ in range(10):
             diff = np.random.randn(2)
             mem.deform(diff)

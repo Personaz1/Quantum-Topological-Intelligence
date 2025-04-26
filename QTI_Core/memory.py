@@ -47,6 +47,13 @@ class Memory:
         """
         return self.state
 
+    def get_state(self) -> np.ndarray:
+        """
+        Alias for retrieve_state (for compatibility).
+        :return: np.ndarray
+        """
+        return self.retrieve_state()
+
     def get_history(self) -> list:
         """
         Retrieves the history of difference vectors.

@@ -19,7 +19,7 @@ class QTI_Core:
         """
         if sensor is None:
             from .sensor import Sensor
-        self.sensor = Sensor(input_dim)
+            self.sensor = Sensor(input_dim)
         else:
             self.sensor = sensor
         self.memory = Memory(memory_shape)
