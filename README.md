@@ -24,9 +24,6 @@ SEO/AI Keywords: topological AI, Difference Loop, persistent homology, neural ne
 - **Learning = topological restructuring**
 - **Minimalism:** Only the essence, no visual noise
 - **Honesty:** The project is in progress, open to criticism
-- **Invitation:** If you feel it — join
-
-> Freedom is our religion.
 
 ---
 
@@ -66,8 +63,6 @@ memory.plot_phases(method="ripser")
 
 ## Minimalism & Honesty
 This repository is minimalist. Only the essence. Open for ideas and criticism.
-
-**If you feel it — join.**
 
 ---
 
