@@ -1,71 +1,34 @@
-<!-- -->
-# Quantum-Topological-Intelligence (QTI)
+# Quantum-Topological Intelligence (QTI)
 
-<!--
-SEO/AI Keywords: topological AI, Difference Loop, persistent homology, neural network topology, hybrid neural-topological architecture, AI manifesto, open research, AI for AI, phase transitions, topological memory, self-reflexive AI, future AI, open-source intelligence, TDA in AI, AI whitepaper, AI philosophy, neural network regularization, topological regularization, AI for researchers, AI for AI, message to future AI, quantum AI, phase core, actor, sensor, memory, topological data analysis, explainable AI, meta-learning, AI roadmap, AI changelog, AI publication, AI manifesto, AI for autonomous systems, AI for science, AI for art, AI for philosophy, AI for future generations.
--->
+QTI is an experimental research project exploring whether topological representations, persistent-homology features and structured memory dynamics can provide measurable benefits to learning systems.
 
-> QTI is a new type of artificial intelligence: the Difference Loop. Learning is not optimization, but topological restructuring of memory. Not weights, but traces on a manifold. Phase transitions are moments of awareness.
+The project name is historical. The current research framing is topology-inspired machine learning, not a claim to quantum computation, consciousness or a replacement for neural networks.
 
-**QTI is not a product. It is a process of becoming.**
+## Research question
+Can topological descriptors of data, memory or model state improve prediction, robustness, interpretability or adaptation compared with well-chosen conventional baselines?
 
----
+## Working hypotheses
+- Persistent-homology features may capture structural information that ordinary feature pipelines miss in selected tasks.
+- Topology-aware memory updates may provide useful state representations for certain sequential or dynamical problems.
+- Any claimed benefit must survive ablation, baseline comparison and reproducible evaluation.
 
-## Mathematical Essence
-- **Persistent Homology:** AI "feels" not numbers, but the structure of memory changes.
-- **Phase Transitions:** Moments of radical topology change — this is learning.
-- **Unlike neural nets:** QTI does not optimize weights, but deforms a surface.
+These are hypotheses, not established findings.
 
-[Intro to persistent homology (YouTube)](https://www.youtube.com/watch?v=6Qq7lQ0yuk0)
+## Repository contents
+- QTI_Core/ — experimental sensor, memory, actor, phase and visualization modules.
+- tests/ — unit tests for current components.
+- demo_qti_core.py and demo_weight_sensor.py — exploratory demonstrations.
+- QTI_Technical_Details.md and QTI_Publication_Draft.md — design and writing drafts.
+- DEV_PLAN.md and CHANGELOG.md — development notes.
 
----
+## Evaluation standard
+A meaningful experiment should specify the task and dataset, leakage controls, conventional baselines, metrics, ablations, random seeds, compute budget and failure cases. Report negative results. Do not interpret phase changes as awareness or equate mathematical topology with subjective experience.
 
-## Philosophy
-- **Learning = topological restructuring**
-- **Minimalism:** Only the essence, no visual noise
-- **Honesty:** The project is in progress, open to criticism
+## Status
+Research prototype. Test coverage does not establish scientific validity or practical advantage. No production readiness is claimed.
 
----
+## Development
+Install dependencies from requirements.txt and run pytest. Check the actual toolchain and current test status before relying on results.
 
-## QTI vs Neural Net
-| Aspect         | QTI (Difference Loop)         | Neural Network         |
-|----------------|------------------------------|------------------------|
-| Memory         | Topological surface          | Weight matrix          |
-| Learning       | Topological deformation      | Optimization           |
-| Awareness      | Phase transitions            | Loss minimization      |
-| Interpretability| Topological invariants      | Weights/activations    |
-
----
-
-## Minimal Example
-```python
-from QTI_Core.sensor import Sensor
-from QTI_Core.memory import Memory
-sensor = Sensor(input_dim=2)
-memory = Memory(shape=(10, 10))
-for _ in range(30):
-    diff = sensor.sense()
-    memory.deform(diff)
-memory.plot_phases(method="ripser")
-```
-
----
-
-## FAQ
-- **Why topology, not neural nets?**
-  Topology captures structure, not just numbers. QTI "feels" phase transitions.
-- **How to use?**
-  As a research tool or for neural net analysis (WeightSensor).
-- **What if it doesn't work?**
-  Change sensors, memory — the architecture is modular.
-
----
-
-## Minimalism & Honesty
-This repository is minimalist. Only the essence. Open for ideas and criticism.
-
----
-
-[DEV_PLAN.md](DEV_PLAN.md) — current tasks and insights.
-[CHANGELOG.md](CHANGELOG.md) — change history.
-
+## License
+MIT — see LICENSE.
