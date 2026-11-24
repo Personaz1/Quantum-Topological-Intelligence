@@ -1,0 +1,3 @@
+# Agent instructions
+
+Research repository. Treat topology-inspired intelligence claims as hypotheses until tested. Before implementation, state the research question, baseline models, datasets, seeds, metrics, ablations and falsification criteria. Preserve negative results and reproducibility metadata. Distinguish mathematical definitions from empirical performance and speculative interpretation. Do not describe the project as AGI or as a demonstrated new intelligence paradigm without evidence.
