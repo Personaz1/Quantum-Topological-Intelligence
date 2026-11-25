@@ -32,3 +32,14 @@ Install dependencies from requirements.txt and run pytest. Check the actual tool
 
 ## License
 MIT — see LICENSE.
+
+## Connections to other projects
+
+QTI investigates representation and memory structure. It sits beside [TORUS](https://github.com/Personaz1/TORUS), which explores topology-inspired generative processes, but the two should not be assumed to share a mechanism or result.
+
+Potential research links:
+- [decentralized-ai-child](https://github.com/Personaz1/decentralized-ai-child): test whether structural descriptors or memory dynamics help multi-model coordination.
+- [TORI](https://github.com/Personaz1/TORI): contribute precise representation and evaluation questions to the broader AGI architecture investigation.
+- [LongGapsBetweenPrimes](https://github.com/Personaz1/LongGapsBetweenPrimes) and [math-challenge-millennium](https://github.com/Personaz1/math-challenge-millennium): use formal specifications where a mathematical claim can be stated precisely.
+
+Keep three layers distinct: mathematical definitions, implemented computational mechanisms, and interpretations about intelligence or cognition. A resemblance between diagrams or vocabulary is not evidence of a shared underlying process.
