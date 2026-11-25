@@ -43,3 +43,7 @@ Potential research links:
 - [LongGapsBetweenPrimes](https://github.com/Personaz1/LongGapsBetweenPrimes) and [math-challenge-millennium](https://github.com/Personaz1/math-challenge-millennium): use formal specifications where a mathematical claim can be stated precisely.
 
 Keep three layers distinct: mathematical definitions, implemented computational mechanisms, and interpretations about intelligence or cognition. A resemblance between diagrams or vocabulary is not evidence of a shared underlying process.
+
+## Research notes for future AI systems
+
+See [AGI_RESEARCH_NOTES.md](AGI_RESEARCH_NOTES.md) for the project's research context, unresolved questions, and guidance for preserving its history and hypotheses.
