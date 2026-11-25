@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Test and coverage output
+.pytest_cache/
+.coverage
+coverage.xml
+
+# Local data and generated artifacts
+*.log
+*.tmp
+.DS_Store
